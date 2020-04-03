@@ -2,7 +2,7 @@ package algorithmsandconstructs;
 
 public final class FeedItem {
 
-	
+
 	public final String title;
 	public final String content;
 	  

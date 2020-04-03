@@ -3,22 +3,20 @@ package algorithmsandconstructs.s2019325;
 import algorithmsandconstructs.FeedInterface;
 import algorithmsandconstructs.FeedItem;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public abstract class Feed implements FeedInterface {
+public class Feed implements FeedInterface {
+
+    ArrayList<FeedItem> arrayList = new ArrayList<FeedItem>();
 
     @Override
     public void addItem(FeedItem item) {
-        ArrayList<FeedItem> arrayList = new ArrayList<>();
-        //arrayList.
+        arrayList.add(item);
     }
 
     @Override
     public Collection<String> listTitles() {
-
         return null;
     }
 

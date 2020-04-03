@@ -23,7 +23,6 @@ public class FeedReader {
             }
         };
 
-
         String file = "test.rss";
         BufferedReader in = new BufferedReader(new FileReader(file));
 
@@ -34,6 +33,5 @@ public class FeedReader {
         for (String title : feed.listTitles()) {
             System.out.println(title);
         }
-
     }
 }
