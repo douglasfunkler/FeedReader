@@ -9,6 +9,7 @@ import java.util.Collection;
 public class Feed implements FeedInterface {
 
     ArrayList<FeedItem> arrayList = new ArrayList<FeedItem>();
+    FeedItem f = new FeedItem(null, null);
 
     @Override
     public void addItem(FeedItem item) {
@@ -17,21 +18,30 @@ public class Feed implements FeedInterface {
 
     @Override
     public Collection<String> listTitles() {
-        return null;
+
+        Collection titles = new ArrayList<String>();
+        f.getTitle();
+        titles.add(String.valueOf(f));
+        return titles;
     }
 
     @Override
     public FeedItem getItem(String title) {
-        return null;
+        title = f.getTitle();
+        Object obj = title;
+        return (FeedItem) obj;
     }
 
     @Override
     public int numItems() {
-        return 0;
+        int number = arrayList.size();
+        return number;
     }
 
     @Override
     public Collection<FeedItem> findItems(String keyword) {
-        return null;
+        Collection key = new ArrayList<String>();
+        key.add(keyword);
+        return key;
     }
 }
